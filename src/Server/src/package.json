@@ -1,0 +1,19 @@
+{
+    "name": "wom-landing-pages",
+    "version": "1.0.0",
+    "description": "Dynamic voucher landing pages for deep links.",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "engines": {
+        "node": "16.x"
+    },
+    "repository": {
+        "url": "https://github.com/WOM-Platform/VoucherLandingPages"
+    },
+    "license": "MIT"
+}
