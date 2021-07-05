@@ -1,11 +1,13 @@
-FROM 16.3.0-alpine3.11
+FROM node:16.3.0
 
 ENV PORT 8000
 EXPOSE 8000
 
-USER 1000
-
 COPY ./src /code
 WORKDIR /code
+
+RUN npm install
+
+USER 1000
 
 CMD ["node", "server.js"]

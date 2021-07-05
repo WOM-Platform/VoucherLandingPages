@@ -3,13 +3,12 @@ version: '3'
 
 services:
   server:
-    environment:
     labels:
     - "traefik.enable=true"
     - "traefik.docker.network=web"
     - "traefik.protocol=http"
     - "traefik.port=8000"
-    - "traefik.frontend.rule=Host:wom.social"
+    - "traefik.frontend.rule=Host:wom.social;PathPrefix:/payment,/vouchers"
     - "traefik.frontend.entryPoints=http,https"
     - "traefik.frontend.redirect.entryPoint=https"
     restart: unless-stopped
