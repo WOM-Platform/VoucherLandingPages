@@ -1,97 +1,84 @@
 html b {
     font-weight: 600;
 }
-.main-container {
+html body {
+    font-family: 'Raleway';
+}
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-.main-container > section {
+body section.main {
     flex-grow: 1;
 }
 
-.centered {
+section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container.is-constrained {
+    max-width: 480px !important;
+}
+
+figure.logo {
+    max-width: 80vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-bottom: 1em;
     text-align: center;
 }
-
-.bg-subtle {
-    background-color: #e0e5ef;
-}
-
-.description {
-    font-size: 0.9em;
-}
-
-.big-form {
-    margin-top: 4rem;
-    margin-bottom: 1.5rem;
-    border-radius: 30px;
-    background: #ffffff;
-    box-shadow: 36px 36px 88px #e6e6e6, -36px -36px 88px #ffffff;
-    padding: 30px;
-}
-.big-form h1 {
-    margin-bottom: 2rem;
-}
-
-.validation-summary-valid {
-    display: none;
-}
-
-.form-subgroup {
-    border: solid 2px #e0e5ef;
-    padding: 1em 1em 1.5em 1em;
-    margin: 2em 0 3em 0;
-    border-radius: 15px;
-}
-
-nav.navbar .navbar-brand img {
-    height: 30px;
-    width: auto;
-}
-
-.language-switcher {
-    background: hsl(224, 25%, 95%);
-    box-shadow: 4px 4px 6px hsla(224, 60%, 20%, 0.4);
-    padding: 0.5em 1em;
+h3 {
     margin-top: 1em;
-    margin-bottom: 3em;
-    display: inline-block;
 }
-.language-switcher a, .language-switcher:visited {
-    text-decoration: underline;
-    color: black;
+
+.call-to-action {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
-.language-switcher a:hover {
-    text-decoration: underline;
-    color: black;
+
+.badges {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
-.language-switcher a.current {
-    text-decoration: none;
-    font-weight: 600;
+.badges a {
+    display: block;
+    text-align: center;
+}
+.badges img {
+    width: 50vw;
 }
 
 footer {
-    padding-bottom: 2em;
-    padding-top: 2em;
     margin-top: 3em;
+    padding: 2rem 1rem;
     background-color: #e0e5ef;
 }
 
-.badge {
-    text-align: center;
-    vertical-align: middle;
-    font-style: italic;
-}
-.badge a {
-    border: 0;
-    text-decoration: none;
-}
-.badge img {
-    max-width: 50%;
-    height: auto;
+/* Responsive */
+@media screen and (min-width: 768px) {
+    figure.logo {
+        max-width: 45vw;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
 }
 
-.badge img.off {
-    opacity: 0.5;
+@media screen and (min-width: 1024px) {
+    figure.logo {
+        max-width: 30vw;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+    }
 }
