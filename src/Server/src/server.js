@@ -23,7 +23,8 @@ app.get('/payment/:otc', (req, res) => {
     console.log('Payment ' + req.params.otc);
 
     res.render('payment', {
-        otc: req.params.otc
+        otc: req.params.otc,
+        womProtocol: process.env.WOM_PROTOCOL ?? 'wom'
     });
 });
 
@@ -36,7 +37,8 @@ app.get('/vouchers/:otc', (req, res) => {
     console.log('Vouchers ' + req.params.otc);
 
     res.render('vouchers', {
-        otc: req.params.otc
+        otc: req.params.otc,
+        womProtocol: process.env.WOM_PROTOCOL ?? 'wom'
     });
 });
 
