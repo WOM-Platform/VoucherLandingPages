@@ -1,4 +1,4 @@
-FROM node:16.3.0
+FROM node:17.5
 
 ENV PORT 8000
 EXPOSE 8000
