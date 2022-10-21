@@ -42,6 +42,20 @@ app.get('/vouchers/:otc', (req, res) => {
     });
 });
 
+app.get('/migration/:otc', (req, res) => {
+    if(!uuidValidate(req.params.otc)) {
+        res.status(400).end();
+        return;
+    }
+
+    console.log('Migration ' + req.params.otc);
+
+    res.render('migration', {
+        otc: req.params.otc,
+        womProtocol: process.env.WOM_PROTOCOL ?? 'wom'
+    });
+});
+
 const listener = app.listen(process.env.PORT, function () {
     console.log('Now listening on port ' + listener.address().port);
 });
