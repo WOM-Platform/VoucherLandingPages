@@ -56,6 +56,21 @@ app.get('/migration/:otc', (req, res) => {
     });
 });
 
+app.get('/migration/:otc/:password', (req, res) => {
+    if(!uuidValidate(req.params.otc)) {
+        res.status(400).end();
+        return;
+    }
+
+    console.log('Migration ' + req.params.otc + ' with partial password');
+
+    res.render('migration', {
+        otc: req.params.otc,
+        womProtocol: process.env.WOM_PROTOCOL ?? 'wom',
+        password: req.params.password,
+    });
+});
+
 const listener = app.listen(process.env.PORT, function () {
     console.log('Now listening on port ' + listener.address().port);
 });
