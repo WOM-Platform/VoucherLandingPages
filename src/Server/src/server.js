@@ -71,6 +71,10 @@ app.get('/migration/:otc/:password', (req, res) => {
     });
 });
 
+app.get('/apple-app-site-association', (req, res) => {
+    res.render('apple-app-site-association');
+});
+
 const listener = app.listen(process.env.PORT, function () {
     console.log('Now listening on port ' + listener.address().port);
 });
