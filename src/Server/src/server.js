@@ -14,6 +14,10 @@ app.set('view engine', 'handlebars');
 
 app.use(express.static('public'));
 
+app.get('/', (req, res) => {
+    res.location('https://wom.social').sendStatus(301);
+});
+
 app.get('/payment/:otc', (req, res) => {
     if(!uuidValidate(req.params.otc)) {
         res.status(400).end();
@@ -69,6 +73,12 @@ app.get('/migration/:otc/:password', (req, res) => {
         womProtocol: process.env.WOM_PROTOCOL ?? 'wom',
         password: req.params.password,
     });
+});
+
+app.get('/apple-app-site-association', (req, res) => {
+    res
+        .type('application/json')
+        .render('apple-app-site-association', { layout: false });
 });
 
 const listener = app.listen(process.env.PORT, function () {
