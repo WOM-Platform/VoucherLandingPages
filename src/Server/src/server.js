@@ -14,6 +14,10 @@ app.set('view engine', 'handlebars');
 
 app.use(express.static('public'));
 
+app.get('/', (req, res) => {
+    res.location('https://wom.social').sendStatus(301);
+});
+
 app.get('/payment/:otc', (req, res) => {
     if(!uuidValidate(req.params.otc)) {
         res.status(400).end();
