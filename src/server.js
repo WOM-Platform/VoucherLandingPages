@@ -75,11 +75,13 @@ app.get('/migration/:otc/:password', (req, res) => {
     });
 });
 
-app.get('/apple-app-site-association', (req, res) => {
+function funcAppleAppSiteAssociation(req, res) {
     res
         .type('application/json')
         .render('apple-app-site-association', { layout: false });
-});
+};
+app.get('/apple-app-site-association', funcAppleAppSiteAssociation);
+app.get('/.well-known/apple-app-site-association', funcAppleAppSiteAssociation);
 
 const listener = app.listen(process.env.PORT, function () {
     console.log('Now listening on port ' + listener.address().port);
