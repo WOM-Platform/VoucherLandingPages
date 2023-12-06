@@ -88,7 +88,7 @@ function funcAndroidAssetLinks(req, res) {
         .type('application/json')
         .render('android-asset-links', { layout: false });
 };
-app.get('.well-known/assetlinks.json', funcAndroidAssetLinks);
+app.get('/.well-known/assetlinks.json', funcAndroidAssetLinks);
 
 const listener = app.listen(process.env.PORT, function () {
     console.log('Now listening on port ' + listener.address().port);
