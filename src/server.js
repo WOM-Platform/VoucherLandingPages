@@ -75,6 +75,17 @@ app.get('/migration/:otc/:password', (req, res) => {
     });
 });
 
+app.get('/cmi/:providerId/:eventId/:totemId', (req, res) => {
+    console.log('Count Me In scan without requestID');
+
+    res.render('countmein', {});
+});
+app.get('/cmi/:providerId/:eventId/:totemId/:requestId', (req, res) => {
+    console.log('Count Me In scan with requestID');
+
+    res.render('countmein', {});
+});
+
 function funcAppleAppSiteAssociation(req, res) {
     res
         .type('application/json')
