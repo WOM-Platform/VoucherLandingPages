@@ -13,6 +13,10 @@
     "payment-button-tooltip": "Effettua il pagamento tramite WOM Pocket",
     "payment-button-text": "Effettua pagamento",
 
+    "migration-description": "Clicca sul pulsante qui sotto per completare la migrazione e ripristinare i tuoi voucher nell’app <b>WOM&nbsp;Pocket</b>.",
+    "migration-button-tooltip": "Completa la migrazione tramite WOM Pocket",
+    "migration-button-text": "Completa migrazione",
+
     "countmein-description": "Inquadra nuovamente il QR&nbsp;Code con l’app <b>WOM&nbsp;Pocket</b> per ottenere i WOM associati all’evento o al luogo in cui ti trovi.",
 
     "privacy-policy": "Informativa sulla privacy"
