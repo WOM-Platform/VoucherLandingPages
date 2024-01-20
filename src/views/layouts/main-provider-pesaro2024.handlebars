@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Worth One Minute | Pesaro 2024</title>
+    <meta name="description" content="WOM is general-purpose rewarding platform based on a voucher exchange system." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="stylesheet" href="/raleway.css" type="text/css" />
+    <link rel="stylesheet" href="/bulma.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <section class="header">
+        <header>
+            <div class="container is-constrained">
+                <figure class="image logo">
+                    <img src="/wom-logo.png" srcset="/wom-logo_960w.png 960w, /wom-logo_1680w.png 1680w" alt="WOM logo" width="2031" height="1250" />
+                </figure>
+
+                <h1>Worth One Minute</h1>
+            </div>
+        </header>
+    </section>
+
+    <section class="main">
+        <div class="container is-constrained">
+            {{{body}}}
+        </div>
+
+        <div class="container is-constrained">
+            <h3 class="is-size-3">{{{ i18n "header-install-apps" }}}</h3>
+
+            <p>{{{ i18n "header-install-apps-content" }}}</p>
+
+            <div class="columns badges">
+                <div class="column">
+                    <a href="https://play.google.com/store/apps/details?id=social.wom.pocket" title="{{ i18n "app-badges-google-play-title" }}">
+                        <img src="/badge_google_play.png" alt="{{ i18n "app-badges-google-play-title" }}" />
+                    </a>
+                </div>
+
+                <div class="column">
+                    <a href="https://apps.apple.com/it/app/wom-pocket/id1466969163" title="{{ i18n "app-badges-app-store-title" }}">
+                        <img src="/badge_app_store.png" alt="{{ i18n "app-badges-app-store-title" }}" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container is-constrained">
+            <h3 class="is-size-3">WOM per Pesaro&nbsp;2024</h3>
+
+            <div class="provider-logos">
+                <a href="https://pesaro2024.it/">
+                    <img src="/providers/pesaro2024-logo.png" alt="Logo Pesaro 2024" />
+                </a>
+
+                <a href="https://ctesquare.it/">
+                    <img src="/providers/pesaro2024-cte-square.png" alt="Logo CTE Square" />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container is-max-desktop">
+            <p><a href="https://wom.social/privacy">{{{ i18n "privacy-policy" }}}</a></p>
+            <p>WOM&nbsp;Platform&nbsp;&mdash;&nbsp;{{ year }}</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -96,15 +96,29 @@ app.get('/migration/:otc/:password', (req, res) => {
     });
 });
 
+function getLayoutForProvider(provider) {
+    switch(provider) {
+        case 'lHWStaR4SYbuRBXhapAo':
+            return "main-provider-pesaro2024";
+
+        default:
+            return "main";
+    }
+}
+
 app.get('/cmi/:providerId/:eventId/:totemId', (req, res) => {
     console.log('Count Me In scan without requestID');
 
-    res.render('countmein', {});
+    res.render('countmein', {
+        layout: getLayoutForProvider(req.params.providerId),
+    });
 });
 app.get('/cmi/:providerId/:eventId/:totemId/:requestId', (req, res) => {
     console.log('Count Me In scan with requestID');
 
-    res.render('countmein', {});
+    res.render('countmein', {
+        layout: getLayoutForProvider(req.params.providerId),
+    });
 });
 
 function funcAppleAppSiteAssociation(req, res) {
