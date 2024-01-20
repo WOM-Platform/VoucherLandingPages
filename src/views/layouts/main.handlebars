@@ -37,22 +37,20 @@
         </div>
 
         <div class="container is-constrained">
-            <h3 class="is-size-3">Install apps</h3>
+            <h3 class="is-size-3">{{{ i18n "header-install-apps" }}}</h3>
 
-            <p>
-                If you haven’t installed the WOM&nbsp;Pocket app yet, follow these links to download them for free and start receiving and paying using WOM vouchers.
-            </p>
+            <p>{{{ i18n "header-install-apps-content" }}}</p>
 
             <div class="columns badges">
                 <div class="column">
-                    <a href="https://play.google.com/store/apps/details?id=social.wom.pocket" title="Install WOM Pocket from Google Play">
-                        <img src="/badge_google_play.png" alt="Install from Google Play" />
+                    <a href="https://play.google.com/store/apps/details?id=social.wom.pocket" title="{{ i18n "app-badges-google-play-title" }}">
+                        <img src="/badge_google_play.png" alt="{{ i18n "app-badges-google-play-title" }}" />
                     </a>
                 </div>
 
                 <div class="column">
-                    <a href="https://apps.apple.com/it/app/wom-pocket/id1466969163" title="Install WOM Pocket from App Store">
-                        <img src="/badge_app_store.png" alt="Install from App Store" />
+                    <a href="https://apps.apple.com/it/app/wom-pocket/id1466969163" title="{{ i18n "app-badges-app-store-title" }}">
+                        <img src="/badge_app_store.png" alt="{{ i18n "app-badges-app-store-title" }}" />
                     </a>
                 </div>
             </div>
@@ -61,7 +59,7 @@
 
     <footer>
         <div class="container is-max-desktop">
-            <p><a href="https://wom.social">Privacy policy</a></p>
+            <p><a href="https://wom.social/privacy">{{{ i18n "privacy-policy" }}}</a></p>
             <p>WOM&nbsp;Platform&nbsp;&mdash;&nbsp;{{ year }}</p>
         </div>
     </footer>

@@ -1,0 +1,19 @@
+{
+    "header-install-apps": "Install apps",
+    "header-install-apps-content": "If you haven’t installed the <b>WOM&nbsp;Pocket</b> app yet, follow these links to download them for free and start receiving and paying using WOM&nbsp;vouchers.",
+
+    "app-badges-google-play-title": "Install WOM Pocket from Google Play",
+    "app-badges-app-store-title": "Install WOM Pocket from App Store",
+
+    "redemption-descrition": "Tap the button below to redeem the vouchers and store them in your <b>WOM&nbsp;Pocket</b> app.",
+    "redemption-button-tooltip": "Redeem vouchers using WOM Pocket",
+    "redemption-button-text": "Redeem Vouchers",
+
+    "payment-description": "Tap the button below to perform the payment through your <b>WOM&nbsp;Pocket</b> app.",
+    "payment-button-tooltip": "Perform payment using WOM Pocket",
+    "payment-button-text": "Perform Payment",
+
+    "countmein-description": "Scan the QR&nbsp;Code again through the <b>WOM&nbsp;Pocket</b> app in order to redeem the WOM vouchers associated to the event or the location you are attending.",
+
+    "privacy-policy": "Privacy policy"
+}
