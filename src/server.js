@@ -106,15 +106,22 @@ function getLayoutForProvider(provider) {
     }
 }
 
+app.get('/cmi/:providerId/:totemId', (req, res) => {
+    console.log('Count Me In scan with totem ID only');
+
+    res.render('countmein', {
+        layout: getLayoutForProvider(req.params.providerId),
+    });
+});
 app.get('/cmi/:providerId/:eventId/:totemId', (req, res) => {
-    console.log('Count Me In scan without requestID');
+    console.log('Count Me In scan with event and totem IDs');
 
     res.render('countmein', {
         layout: getLayoutForProvider(req.params.providerId),
     });
 });
 app.get('/cmi/:providerId/:eventId/:totemId/:requestId', (req, res) => {
-    console.log('Count Me In scan with requestID');
+    console.log('Count Me In scan with event, totem, and request IDs');
 
     res.render('countmein', {
         layout: getLayoutForProvider(req.params.providerId),
