@@ -13,6 +13,10 @@
     "payment-button-tooltip": "Perform payment using WOM Pocket",
     "payment-button-text": "Perform Payment",
 
+    "migration-description": "Tap the button below to complete the migration and restore your WOM&nbsp;vouchers in your <b>WOM&nbsp;Pocket</b> app.",
+    "migration-button-tooltip": "Complete migration in WOM Pocket",
+    "migration-button-text": "Complete migration",
+
     "countmein-description": "Scan the QR&nbsp;Code again through the <b>WOM&nbsp;Pocket</b> app in order to redeem the WOM vouchers associated to the event or the location you are attending.",
 
     "privacy-policy": "Privacy policy"
