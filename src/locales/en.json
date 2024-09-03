@@ -19,5 +19,9 @@
 
     "countmein-description": "Scan the QR&nbsp;Code again through the <b>WOM&nbsp;Pocket</b> app in order to redeem the WOM vouchers associated to the event or the location you are attending.",
 
+    "pos-verify-description": "Tap the button below to verify your e-mail address and complete the registration process.",
+    "pos-verify-button-tooltip": "Verify e-mail and register",
+    "pos-verify-button-text": "Verify e-mail",
+
     "privacy-policy": "Privacy policy"
 }

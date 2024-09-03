@@ -7,8 +7,14 @@
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
+	"containerEnv": {
+		"PORT": "4444"
+	},
+
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [
+		4444
+	]
 
 	// Uncomment the next line to run commands after the container is created.
 	// "postCreateCommand": "cat /etc/os-release",

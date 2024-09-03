@@ -24,6 +24,7 @@ const hbs = exphbs.create({
             if (!str) return str;
             return this.res.__(str);
         },
+        component: (str) => encodeURIComponent(str),
     }
 });
 app.engine('handlebars', hbs.engine);
@@ -91,10 +92,28 @@ app.get('/migration/:otc/:password', (req, res) => {
 
     res.render('migration', {
         otc: req.params.otc,
-        womProtocol: process.env.WOM_PROTOCOL ?? 'wom',
         password: req.params.password,
+        womProtocol: process.env.WOM_PROTOCOL ?? 'wom',
     });
 });
+
+app.get('/pos/verify', (req, res) => {
+    if(!req.query.email || !req.query.token) {
+        res.status(400).end();
+        return;
+    }
+
+    console.log('Verification for email ' + req.query.email);
+
+    res.render('pos-mail-verification', {
+        email: req.query.email,
+        token: req.query.token,
+        womProtocol: process.env.WOM_POS_PROTOCOL ?? 'wompos',
+        layout: "pos",
+    });
+});
+
+/* Count Me In */
 
 function getLayoutForProvider(provider) {
     switch(provider) {
@@ -128,6 +147,8 @@ app.get('/cmi/:providerId/:eventId/:totemId/:requestId', (req, res) => {
     });
 });
 
+/* Register well known static files */
+
 function funcAppleAppSiteAssociation(req, res) {
     res
         .type('application/json')
@@ -142,6 +163,8 @@ function funcAndroidAssetLinks(req, res) {
         .render('android-asset-links', { layout: false });
 };
 app.get('/.well-known/assetlinks.json', funcAndroidAssetLinks);
+
+/* Start it up */
 
 const listener = app.listen(process.env.PORT, function () {
     console.log('Now listening on port ' + listener.address().port);

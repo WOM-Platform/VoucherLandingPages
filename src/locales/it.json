@@ -19,5 +19,9 @@
 
     "countmein-description": "Inquadra nuovamente il QR&nbsp;Code con l’app <b>WOM&nbsp;Pocket</b> per ottenere i WOM associati all’evento o al luogo in cui ti trovi.",
 
+    "pos-verify-description": "Clicca sul pulsante qui sotto per verificare il tuo indirizzo e-mail e completare la registrazione.",
+    "pos-verify-button-tooltip": "Verifica indirizzo e-mail e registrati",
+    "pos-verify-button-text": "Verifica e-mail",
+
     "privacy-policy": "Informativa sulla privacy"
 }
