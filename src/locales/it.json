@@ -17,6 +17,10 @@
     "migration-button-tooltip": "Completa la migrazione tramite WOM Pocket",
     "migration-button-text": "Completa migrazione",
 
+    "badge-challenge-description": "Clicca sul pulsante qui sotto per visualizzare la sfida nell’app <b>WOM&nbsp;Pocket</b>.",
+    "badge-challenge-button-tooltip": "Visualizza la sfida tramite WOM Pocket",
+    "badge-challenge-button-text": "Visualizza sfida",
+
     "countmein-description": "Inquadra nuovamente il QR&nbsp;Code con l’app <b>WOM&nbsp;Pocket</b> per ottenere i WOM associati all’evento o al luogo in cui ti trovi.",
 
     "pos-verify-description": "Clicca sul pulsante qui sotto per verificare il tuo indirizzo e-mail e completare la registrazione.",

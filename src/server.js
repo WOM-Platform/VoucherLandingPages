@@ -93,6 +93,20 @@ app.get('/migration/:otc/:password', (req, res) => {
     });
 });
 
+app.get('/challenge/v1/:challengeId', (req, res) => {
+    if(!req.params.challengeId) {
+        res.status(400).end();
+        return;
+    }
+
+    console.log('Badge challenge ID ' + req.params.challengeId);
+
+    res.render('badge-challenge', {
+        challengeId: req.params.challengeId,
+        womProtocol: process.env.WOM_PROTOCOL ?? 'wom',
+    });
+});
+
 app.get('/pos/verify', (req, res) => {
     if(!req.query.email || !req.query.token) {
         res.status(400).end();
